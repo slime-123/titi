@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+@keyframes fadeIn{
+to{
+opacity: 0;}
+}
+body{
+     font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 100vh;
+
+
+}
+.container{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    animation: fadeIn 8s ease-in forwards;
+}
+.loading-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(#0B0C10, #222729);
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+}
+.svg{
+    height: 150px;
+    width:150px ;
+    stroke: aqua; 
+    fill-opacity:0 ;
+    stroke-dasharray: 4500;
+    animation: draw 18s ease-in-out;
+    
+    
+    
+}
+.logo-name{
+   font-size:  36px; 
+   letter-spacing: 10px;
+   margin-left: 36px;
+   color: #fff;
+
+
+  text-transform: uppercase;
+ 
+  font-weight: bolder;
+}
+@keyframes draw {
+    0%{
+        stroke-dashoffset: 4500;
+    }
+    
+   100%{
+    stroke-dashoffset: 0;
+   } 
+}
+.name-container {
+  height: 30px;
+  
+}
+.signUpBtnLink.formwrapper.active.Login{
+    transform: translateY(-450px);
+}
